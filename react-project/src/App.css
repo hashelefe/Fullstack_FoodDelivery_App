@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+ .navbar a {
+  padding-left: 16px;
+ }
+
+ .cart-icon{
+   margin-left: 12px;
+ }
+
+ .cart-badge {
+  top:55px;
+ }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.menu-button {
+  display: none;
+}
+
+.nav-icons {
+  display: flex;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-button {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .nav-tabs {
+    display: none;
+  }
+
+  #tabs{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .show {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 96px;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 6px;
+  }
+
+  .cart-badge {
+    top:146px;
+  }
+
+  .cart-icon {
+    margin-left: 8px;
+  }
+}
+
+.tab {
+  cursor: pointer;
+}
+
+.tab:hover {
+  color:#61dafb !important;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.noUnderline {
+  text-decoration: none !important;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: white;
+  background-color: lightskyblue;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  margin: 0.5vh;
+  margin-left: 0;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: scale(1.08);
+  transition: all 0.3s;
+  background-color: skyblue;
+}
+
+.btn-disabled {
+  background-color: darkgray !important;
+}
+
+input[type="radio"]{
+  margin-right: 20px;
+}
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightskyblue;
+  color: #000; 
+  margin: auto; 
+  margin-top: 10vh;
+  padding: 30px;
+}
+
+.cart-badge {
+  position: absolute;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.cart-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-icon-container {
+  position: relative;
+}

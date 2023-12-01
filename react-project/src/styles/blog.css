@@ -1,0 +1,87 @@
+.blogDetails{
+    width: 70%;
+    padding: 1.5vh;
+    text-align: start;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .blogTitle{
+        width: 80%;
+        font-size: 2.5em;
+    }
+
+    .blogDesc {
+        width: 60%;
+        font-size: medium;
+    }
+
+    .blogContent {
+        font-size: larger;
+        margin-top: 7vh;
+    }
+
+    .createBlog {
+        padding: 20px;
+        padding-bottom: 50px;
+        width: 50%;
+        margin: auto;
+        margin-top: 5vh;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .formInput {
+        min-width: 300px;
+    }
+}
+
+.blogList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2vh;
+    justify-content: center;
+    width: 90%;
+}
+.blogCard {
+    width: 35vh;
+    min-height: 200px;
+    margin: 20px;
+}
+
+.sortBy {
+    width: 63%;
+    display: flex;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 80%;
+}
+
+.form {
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.formInput {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 2vh;
+}

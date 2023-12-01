@@ -1,0 +1,226 @@
+@media only screen and (min-width: 768px) {
+    h1 {
+        margin: 0;
+        margin-top: 5vh;
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .firstSection
+    {
+        line-height:normal;
+        margin-top: 8vh;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .findLocal {
+        margin: auto;
+        text-align: left;
+        display: flex;
+    }
+    
+    .findLeft {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .findRight {
+        margin: auto;
+    }  
+
+    .searchSection {
+        display: inline-flex;
+    }
+
+    .catTiles {
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 12vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center ;
+        align-content: center;
+        width: 75%;
+        min-height: 180px;
+        padding: 8vh;
+        transform: scale(1); /* Set the initial transformation for the child */
+        transition: transform 0.5s;
+    }
+
+    .catTile {
+        transform: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        flex-basis: 200px;
+        background-color: white;
+        border-radius: 12px;
+        color: #61dafb;
+        margin: 5vh;
+        min-width: 200px;
+        min-height: 60px;
+        padding: 1em;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: scale(1); /* Set the initial transformation for the child */
+        transition: transform 0.5s;
+    }
+
+    .catTiles :hover{
+        transform: translate(-10px, -10px);
+        transform: scale(1.08);
+    }
+
+    .modal-content {
+        width: 30%;
+        margin-top: 80px;
+        max-height: 95%;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .firstSection{
+        padding: 12px;
+    }
+    .catTiles{
+        padding: 5vh;
+    }
+    .catTile {
+        background-color: white;
+        color: #61dafb;
+        margin: auto;
+        width: 60%;
+        padding: 1em;
+        margin-top: 5vh;
+        border-radius: 12px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+
+    .imgCut {
+        display: none;
+    }
+
+    .modal-content {
+        width: 60%;
+        margin-top: 60px;
+        max-height: 600px;
+        overflow: scroll;
+    }
+}
+
+.searchBar {
+    width: 50%;
+    background-color: #ebebebb2;
+    border: #030303af;
+    border-radius: 1em;
+    padding: 10px;
+    height: 4em;
+}
+
+.searchButton {
+    font-weight: 600;
+    margin-left: 10%;
+    height: 4em;
+    width: 15%;
+    background-color: #61dafb;
+    color: black;
+}
+
+.secondSection {
+    margin-top: 25vh;
+    background-color: #61dafb;
+    color: white;
+    min-height: 300px;
+    height: fit-content;
+}
+
+.imgCut {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blogSection {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+  }
+  
+  .blogSection h1 {
+    margin-bottom: 5vh;
+  }
+  .blogCard {
+    margin: auto;
+    margin-top: 5vh;
+    padding: 2vh;
+    border-radius: 12px;
+    width: 60%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  #card :hover{
+    transform: scale(1.03);
+    transition: all 0.2s;
+  }
+  
+  .blogCard h3 {
+    margin: 1vh;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  .modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 99;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.modal input {
+	background-color: rgba(238, 238, 238, 0.822)333;
+	border: none;
+	padding: 8px 12px;
+    margin: 20px;
+	width: 60%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

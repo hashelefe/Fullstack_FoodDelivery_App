@@ -1,0 +1,104 @@
+@media screen and (min-width: 768px) {
+    .cart { 
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cartForm{
+        margin-top: 5vh;
+    }
+}
+
+.cart {
+    width: 80%;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.dish {
+    min-width: 200px;
+    padding: 12px;
+    height: fit-content;
+    text-wrap: wrap;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:  1px solid  rgba(157, 157, 157, 0.223);
+}
+
+.leftDish {
+    text-align: start;
+    margin-right: 20px;
+}
+
+.cartList {
+    min-width: 60%;
+    max-width: 100%;
+    padding: 25px;
+    padding-right: 35px;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cartForm {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    text-align: start;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+label,
+button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.orderInput {
+    width: 80%;
+    font-size: 12px;
+    padding: 0.25rem;
+}
+
+.btn-quantity {
+    width: 40px;
+}
+
+
+/* Styling for orders table in Orders.js file */
+.orders-table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 20px;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .orders-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .orders-table tbody tr:hover {
+    background-color: #e2e2e2;
+  }
+  
