@@ -1,7 +1,7 @@
-import '../styles/cart.css';
-import useCart from '../hooks/useCart';
+import '../../styles/cart.css';
+import useCart from '../../hooks/useCart';
 import { useContext, useState } from 'react';
-import AuthContext from '../auth/AuthProvider';
+import AuthContext from '../../auth/AuthProvider';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Cart = () => {
@@ -38,7 +38,7 @@ const Cart = () => {
             } else if (response.status === 401) {
                 window.alert("Unauthorized");
             } else {
-                console.error('Unexpected error:', response.statusText);
+                console.log('Unexpected error:', response.statusText);
             }
         })
         .catch((error) => {
@@ -55,7 +55,7 @@ const Cart = () => {
                 <h2 style={{marginBottom: 30, padding: 10, width: '60%', margin: 'auto', borderBottom: "1px solid rgba(157, 157, 157, 0.223)"}}>Cart of user: {auth.user}</h2>
                 {products.map((dish) => 
                     (
-                    <div className="dish">
+                    <div className="dish" key={dish.id}>
                         <div className="leftDish">
                             <h3 style={{fontSize: 22, marginBottom: 6}}>{dish.name}</h3>
                             <small style={{fontSize: 16}}>{dish.description}</small>
@@ -81,13 +81,13 @@ const Cart = () => {
 
             <div className="cartForm">
                 <form onSubmit={handleSubmit}>
-                    <label id='name'>Name:</label>
+                    <label htmlFor='name'>Name:</label>
                     <input required type="text" id='name' className='orderInput' value ={name} onChange={(e) => setName(e.target.value)}></input>
-                    <label id='address'>Address:</label>
+                    <label htmlFor='address'>Address:</label>
                     <input required type="text" id='address' className='orderInput' value ={address} onChange={(e) => setAddress(e.target.value)}></input>
-                    <label id='city'>City:</label>
+                    <label htmlFor='city'>City:</label>
                     <input required type="text" id='city' className='orderInput'value ={city} onChange={(e) => setCity(e.target.value)}></input>
-                    <label id='info'>Additional info:</label>
+                    <label htmlFor='info'>Additional info:</label>
                     <textarea id='info' style={{resize: 'none'}} value ={info} onChange={(e) => setInfo(e.target.value)}></textarea>
                     <input type="submit" value="Order" className="btn-primary" style={{marginTop: 35}}></input>
                 </form>

@@ -21,6 +21,7 @@ const Blogs = () => {
             <div className="blogList">
                 {isPending && <div>Loading...</div>}
                 {blogs.length !== 0 && <BlogList blogs={blogs}/>}
+                {blogs.length === 0 && <div>No blogs available</div>}
             </div>
         </>
     )

@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Restaurants from './components/restaurants/Restaurants';
-import Cart from './components/Cart';
+import Cart from './components/cart/Cart';
 import Blogs from './components/blog/Blogs';
 import BlogDetails from './components/blog/BlogDetails';
 import BlogCreate from './components/blog/BlogCreate';

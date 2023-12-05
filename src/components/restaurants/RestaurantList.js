@@ -7,7 +7,7 @@ const RestaurantList = ( {restaurants} ) => {
         <div className="restaurants">
             {restaurants.map(restaurant => (
                 <Link to={`/restaurants/${restaurant.id}`}>
-                    <div className="restaurantCard">
+                    <div className="restaurantCard" key={restaurant.id}>
                         <div className="restaurantCardHeader">
                             <img src={restaurant.img} alt={restaurant.name}/>
                         </div>

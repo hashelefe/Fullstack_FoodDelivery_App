@@ -62,7 +62,7 @@ const Navbar = () => {
                 <div className="bar2"></div>
                 <div className="bar3"></div>
         </div>
-            <div className={isActive ? 'show' : '' + 'nav-tabs'} id="tabs">
+            <div className={isActive ? 'show' : 'nav-tabs'} id="tabs">
                 <Link to="/" className='tab'>HOME</Link>
                 <Link to="/restaurants" className='tab'>RESTAURANTS</Link>
                 <Link to="/blogs" className='tab'>BLOG</Link>

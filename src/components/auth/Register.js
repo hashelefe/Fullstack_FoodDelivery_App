@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { act } from 'react-dom/test-utils';
 import './../../styles/auth.css'
 
     const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
@@ -65,15 +66,12 @@ const Register = ({toggleModal, setIsRegistered, isRegistered}) => {
                   password: pwd,
                 }),
               })
-            console.log(response?.data);
-            console.log(response?.accessToken);
-            console.log(JSON.stringify(response))
-            setSuccess(true);
-            //clear state and controlled inputs
-            //need value attrib on inputs for this
-            setUser('');
-            setPwd('');
-            setMatchPwd('');
+              act(() => {
+                setSuccess(true);
+                setUser('');
+                setPwd('');
+                setMatchPwd('');
+              });
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');

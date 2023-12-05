@@ -33,7 +33,7 @@ function RestaurantDetails() {
             {menuPending && <div>Loading...</div>}
             {!menuPending && <div className="menuList">
                 {menu?.dishes.map(dish => (
-                    <div className="dishCard">
+                    <div className="dishCard" key={dish.id}>
                         <div className="leftCard">
                             <p style={{fontSize: 22, fontWeight: 600, margin: 0}}>{dish.name}</p>
                             <small>{dish.description}</small>    

@@ -4,7 +4,6 @@ import '@fortawesome/free-regular-svg-icons';
 import useFetch from '../../hooks/useFetch';
 import RestaurantList from './RestaurantList';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Restaurants = () => {
     const {fetched: restaurants, isPending} = useFetch('http://localhost:5000/api/restaurants/');
@@ -150,7 +149,7 @@ const Restaurants = () => {
                         Categories:
                         <div className="filter-buttons">
                             {!isPending && categories.map((category) => (
-                                <button className='btn-primary' value={category} onClick={handleChange}>{category}</button>
+                                <button className='btn-primary' value={category} id={category} onClick={handleChange}>{category}</button>
                             ))}
                             <button className='btn-primary' value={''} onClick={handleChange}>Clear</button>
                         </div>
