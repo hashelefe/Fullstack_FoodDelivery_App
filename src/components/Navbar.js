@@ -26,7 +26,11 @@ const Navbar = () => {
 
     const handleLogout = async () => {
       try {
+<<<<<<< Updated upstream
         const response = await fetch('https://fullstackfooddeliveryserver-production.up.railway.app/logout', {
+=======
+        const response = await fetch('https://fooddelivery-api.onrender.com/logout', {
+>>>>>>> Stashed changes
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',

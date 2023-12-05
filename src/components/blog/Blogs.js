@@ -6,7 +6,11 @@ import { useContext } from "react";
 import AuthContext from "../../auth/AuthProvider";
 
 const Blogs = () => {
+<<<<<<< Updated upstream
     const {fetched: blogs, isPending} = useFetch('https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/');
+=======
+    const {fetched: blogs, isPending} = useFetch('https://fooddelivery-api.onrender.com/api/blogs/');
+>>>>>>> Stashed changes
     const {auth} = useContext(AuthContext);
     console.log(auth)
     return (

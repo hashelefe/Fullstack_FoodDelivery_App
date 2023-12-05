@@ -19,7 +19,11 @@ const Cart = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const order = { name, user, address, city, info, products, value };
+<<<<<<< Updated upstream
         fetch('https://fullstackfooddeliveryserver-production.up.railway.app/api/orders', {
+=======
+        fetch('https://fooddelivery-api.onrender.com/api/orders', {
+>>>>>>> Stashed changes
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

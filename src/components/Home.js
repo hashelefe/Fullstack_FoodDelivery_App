@@ -9,7 +9,11 @@ import BlogList from './blog/BlogList';
 const Home = () => {
 
 
+<<<<<<< Updated upstream
     const {fetched: blogs, isPending} = useFetch('https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/')
+=======
+    const {fetched: blogs, isPending} = useFetch('https://fooddelivery-api.onrender.com/api/blogs/')
+>>>>>>> Stashed changes
     return (
         <div className="container">
             <div className="firstSection">
