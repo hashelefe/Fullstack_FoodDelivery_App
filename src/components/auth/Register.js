@@ -66,12 +66,13 @@ const Register = ({toggleModal, setIsRegistered, isRegistered}) => {
                   password: pwd,
                 }),
               })
-              act(() => {
-                setSuccess(true);
-                setUser('');
-                setPwd('');
-                setMatchPwd('');
-              });
+              if(response.status === 201){
+                act(() => {
+                    setSuccess(true);
+                    setUser('');
+                    setPwd('');
+                    setMatchPwd('');
+              })};
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');
