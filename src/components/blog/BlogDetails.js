@@ -8,17 +8,10 @@ const BlogDetails = () => {
     const {id} = useParams();
     const history = useHistory();
     const {auth} = useContext(AuthContext);
-<<<<<<< Updated upstream
-    const {fetched: blog, isPending} = useFetch('https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/'+id)
-    
-    const handleDelete = () => {
-      fetch(`https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/${id}`, {
-=======
     const {fetched: blog, isPending} = useFetch('https://fooddelivery-api.onrender.com/api/blogs/'+id)
     
     const handleDelete = () => {
       fetch(`https://fooddelivery-api.onrender.com/api/blogs/${id}`, {
->>>>>>> Stashed changes
           method: 'DELETE',
           headers: {
               "Content-Type": "application/json",

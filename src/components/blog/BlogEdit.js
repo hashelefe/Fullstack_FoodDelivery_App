@@ -37,11 +37,7 @@ const BlogEdit = () => {
         e.preventDefault();
         const updatedBlog = { title, desc, content };
         
-<<<<<<< Updated upstream
-        fetch(`https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/${id}`, {
-=======
         fetch(`https://fooddelivery-api.onrender.com/api/blogs/${id}`, {
->>>>>>> Stashed changes
             method: 'PUT',
             headers: { 
                 "Content-Type": "application/json",

@@ -12,11 +12,7 @@ const Orders = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-<<<<<<< Updated upstream
-                const response = await axios.get('https://fullstackfooddeliveryserver-production.up.railway.app/api/orders/', {
-=======
                 const response = await axios.get('https://fooddelivery-api.onrender.com/api/orders/', {
->>>>>>> Stashed changes
                     headers: {
                         "Content-Type": "application/json",
                         "Authorization": `Bearer ${auth?.accessToken}`

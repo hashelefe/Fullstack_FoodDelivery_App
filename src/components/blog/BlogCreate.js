@@ -16,11 +16,7 @@ const BlogCreate = () => {
         const date = new Date();
         const blog = { title, desc, content, date };
     
-<<<<<<< Updated upstream
-        axios.post('https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/', blog, {
-=======
         axios.post('https://fooddelivery-api.onrender.com/api/blogs/', blog, {
->>>>>>> Stashed changes
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${auth?.accessToken}`

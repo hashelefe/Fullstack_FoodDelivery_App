@@ -3,11 +3,7 @@ import useFetch from "../hooks/useFetch";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Category = () => {
-<<<<<<< Updated upstream
-    const {fetched: restaurants, isPending} = useFetch('https://fullstackfooddeliveryserver-production.up.railway.app/api/restaurants/');
-=======
     const {fetched: restaurants, isPending} = useFetch('https://fooddelivery-api.onrender.com/api/restaurants/');
->>>>>>> Stashed changes
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {

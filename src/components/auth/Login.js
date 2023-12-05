@@ -2,11 +2,7 @@ import { useRef, useState, useEffect, useContext } from "react";
 import axios from '../../api/axios';
 import AuthContext from "../../auth/AuthProvider";
 
-<<<<<<< Updated upstream
-const LOGIN_URL = 'https://fullstackfooddeliveryserver-production.up.railway.app/api/users/login'
-=======
 const LOGIN_URL = 'https://fooddelivery-api.onrender.com/api/users/login'
->>>>>>> Stashed changes
 
 const Login = ({toggleModal, setIsRegistered}) => {
     
