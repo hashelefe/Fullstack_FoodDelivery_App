@@ -13,7 +13,7 @@ const BlogEdit = () => {
     
     useEffect(() => {
         // Fetch the blog data when the component mounts
-        axios.get(`http://localhost:5000/api/blogs/${id}`, {
+        axios.get(`https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/${id}`, {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${auth?.accessToken}`
@@ -37,7 +37,7 @@ const BlogEdit = () => {
         e.preventDefault();
         const updatedBlog = { title, desc, content };
         
-        fetch(`http://localhost:5000/api/blogs/${id}`, {
+        fetch(`https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/${id}`, {
             method: 'PUT',
             headers: { 
                 "Content-Type": "application/json",

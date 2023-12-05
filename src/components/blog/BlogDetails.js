@@ -8,10 +8,10 @@ const BlogDetails = () => {
     const {id} = useParams();
     const history = useHistory();
     const {auth} = useContext(AuthContext);
-    const {fetched: blog, isPending} = useFetch('http://localhost:5000/api/blogs/'+id)
+    const {fetched: blog, isPending} = useFetch('https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/'+id)
     
     const handleDelete = () => {
-      fetch(`http://localhost:5000/api/blogs/${id}`, {
+      fetch(`https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/${id}`, {
           method: 'DELETE',
           headers: {
               "Content-Type": "application/json",

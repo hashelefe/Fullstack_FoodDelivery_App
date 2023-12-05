@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Category = () => {
-    const {fetched: restaurants, isPending} = useFetch('http://localhost:5000/api/restaurants/');
+    const {fetched: restaurants, isPending} = useFetch('https://fullstackfooddeliveryserver-production.up.railway.app/api/restaurants/');
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {

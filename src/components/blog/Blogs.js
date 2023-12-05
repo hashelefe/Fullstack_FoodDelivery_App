@@ -6,7 +6,7 @@ import { useContext } from "react";
 import AuthContext from "../../auth/AuthProvider";
 
 const Blogs = () => {
-    const {fetched: blogs, isPending} = useFetch('http://localhost:5000/api/blogs/');
+    const {fetched: blogs, isPending} = useFetch('https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/');
     const {auth} = useContext(AuthContext);
     console.log(auth)
     return (

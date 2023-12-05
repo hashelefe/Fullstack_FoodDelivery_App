@@ -26,7 +26,7 @@ const Navbar = () => {
 
     const handleLogout = async () => {
       try {
-        const response = await fetch('http://localhost:5000/logout', {
+        const response = await fetch('https://fullstackfooddeliveryserver-production.up.railway.app/logout', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',

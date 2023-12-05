@@ -9,7 +9,7 @@ import BlogList from './blog/BlogList';
 const Home = () => {
 
 
-    const {fetched: blogs, isPending} = useFetch('http://localhost:5000/api/blogs/')
+    const {fetched: blogs, isPending} = useFetch('https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/')
     return (
         <div className="container">
             <div className="firstSection">

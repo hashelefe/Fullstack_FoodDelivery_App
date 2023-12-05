@@ -16,7 +16,7 @@ const BlogCreate = () => {
         const date = new Date();
         const blog = { title, desc, content, date };
     
-        axios.post('http://localhost:5000/api/blogs/', blog, {
+        axios.post('https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/', blog, {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${auth?.accessToken}`
