@@ -10,3 +10,11 @@ Features include authentication, streamlined cart management, and a versatile CR
 Ready to revolutionize your food journey! 🥪
 
 Used with [Fullstack_Delivery_Server](https://github.com/hashelefe/Fullstack_FoodDelivery_Server) with from other repository from my profile.
+
+Most of features are avaiable after authentication.
+Create your account by clicking to user icon on navbar
+and then log in to see features like:
+- Adding specific products to the cart 🛒
+- Blogs management (adding, editing, deleting)📖
+- Creating orders ✉️
+- Displaying list of orders created 📋
