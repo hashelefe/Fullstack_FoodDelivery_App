@@ -79,6 +79,8 @@ const Register = ({toggleModal, setIsRegistered, isRegistered}) => {
                 setUser('');
                 setPwd('');
                 setMatchPwd('');
+                window.alert("Account created!")
+                handleChange();
             });
         } catch (err) {
             if (err.message === 'Registration Failed') {
