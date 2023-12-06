@@ -74,15 +74,14 @@ const Register = ({toggleModal, setIsRegistered, isRegistered}) => {
             }
     
             console.log('Server responsed with: ' + response.status)
-            act(() => {
                 setSuccess(true);
                 setUser('');
                 setPwd('');
                 setMatchPwd('');
                 window.alert("Account created!")
                 handleChange();
-            });
-        } catch (err) {
+            }
+         catch (err) {
             if (err.message === 'Registration Failed') {
                 setErrMsg('Registration Failed. Please try again later.');
             } else {
