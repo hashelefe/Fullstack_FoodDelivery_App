@@ -86,7 +86,7 @@ const Register = ({toggleModal, setIsRegistered, isRegistered}) => {
             if (err.message === 'Registration Failed') {
                 setErrMsg('Registration Failed. Please try again later.');
             } else {
-                setErrMsg('Something went wrong. Please check your network connection.');
+                setErrMsg(err.message);
             }
             errRef.current.focus();
         }
