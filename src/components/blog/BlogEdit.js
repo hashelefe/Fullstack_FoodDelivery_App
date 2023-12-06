@@ -13,7 +13,7 @@ const BlogEdit = () => {
     
     useEffect(() => {
         // Fetch the blog data when the component mounts
-        axios.get(`https://fullstackfooddeliveryserver-production.up.railway.app/api/blogs/${id}`, {
+        axios.get(`https://fooddelivery-api.onrender.com/api/blogs/${id}`, {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${auth?.accessToken}`
