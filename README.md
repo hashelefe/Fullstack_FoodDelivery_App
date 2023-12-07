@@ -3,6 +3,7 @@
      [My LinkedIn profile](https://www.linkedin.com/in/jakub-nowaczek-a8b446247/)
 
  🤖  Link to [demo](https://fooddelivery-app-0yu5.onrender.com/)
+      Newest code ready to work online on demo branch!
     
 ### Description
 A robust React, Node.js, and Express project for a seamless food delivery app.
