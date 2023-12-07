@@ -4,7 +4,7 @@
 
  🤖  Link to [demo](https://fooddelivery-app-0yu5.onrender.com/)
     
-# Description
+### Description
 A robust React, Node.js, and Express project for a seamless food delivery app.
 Features include authentication, streamlined cart management, and a versatile CRUD system for blogging about culinary experiences.
 Ready to revolutionize your food journey! 🥪
@@ -15,6 +15,7 @@ Database: MongoDB 🍃
 Connection env is called DATASBASE_URI and it's crucial to connect locally with database.
 For authentication ACCESS_TOKEN_SECRET and REFRESH_TOKEN_SECRET for jwt verification.
 
+### Server side
 Used with [Fullstack_Delivery_Server](https://github.com/hashelefe/Fullstack_FoodDelivery_Server) with from other repository from my profile.
 
 Most of features are avaiable after authentication.
