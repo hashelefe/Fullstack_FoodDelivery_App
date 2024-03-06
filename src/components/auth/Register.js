@@ -6,7 +6,7 @@ import './../../styles/auth.css'
 
     const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
     const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-    const REGISTER_URL = 'http://localhost:5000/api/users/register';
+    const REGISTER_URL = 'https://fullstack-food-delivery-server.vercel.app/api/users/register';
 
 
 const Register = ({toggleModal, setIsRegistered, isRegistered}) => {
@@ -48,38 +48,44 @@ const Register = ({toggleModal, setIsRegistered, isRegistered}) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // if button enabled with JS hack
+        
         const v1 = USER_REGEX.test(user);
         const v2 = PWD_REGEX.test(pwd);
+        
         if (!v1 || !v2) {
             setErrMsg("Invalid Entry");
             return;
         }
+        
         try {
             const response = await fetch(REGISTER_URL, {
                 method: 'POST',
                 headers: {
-                  'Content-Type': 'application/json',
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                  username: user,
-                  password: pwd,
+                    username: user,
+                    password: pwd,
                 }),
-              })
-              if(response.status === 201){
-                act(() => {
-                    setSuccess(true);
-                    setUser('');
-                    setPwd('');
-                    setMatchPwd('');
-              })};
-        } catch (err) {
-            if (!err?.response) {
-                setErrMsg('No Server Response');
-            } else if (err.response?.status === 409) {
-                setErrMsg('Username Taken');
+            });
+    
+            if (!response.ok) {
+                throw new Error('Registration Failed');
+            }
+    
+            console.log('Server responsed with: ' + response.status)
+                setSuccess(true);
+                setUser('');
+                setPwd('');
+                setMatchPwd('');
+                window.alert("Account created!")
+                handleChange();
+            }
+         catch (err) {
+            if (err.message === 'Registration Failed') {
+                setErrMsg('Registration Failed. Please try again later.');
             } else {
-                setErrMsg('Registration Failed')
+                setErrMsg(err.message);
             }
             errRef.current.focus();
         }

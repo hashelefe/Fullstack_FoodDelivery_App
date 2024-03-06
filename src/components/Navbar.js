@@ -26,7 +26,7 @@ const Navbar = () => {
 
     const handleLogout = async () => {
       try {
-        const response = await fetch('http://localhost:5000/logout', {
+        const response = await fetch('https://fullstack-food-delivery-server.vercel.app/logout', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
