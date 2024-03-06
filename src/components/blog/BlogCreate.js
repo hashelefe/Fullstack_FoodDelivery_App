@@ -16,7 +16,7 @@ const BlogCreate = () => {
         const date = new Date();
         const blog = { title, desc, content, date };
     
-        axios.post('https://fullstack-food-delivery-server.vercel.app/api/blogs/', blog, {
+        axios.post('https://fullstack-food-delivery-server-git-demo-hashelefes-projects.vercel.app/api/blogs/', blog, {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${auth?.accessToken}`

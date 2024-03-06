@@ -12,7 +12,7 @@ const Orders = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://fullstack-food-delivery-server.vercel.app/api/orders/', {
+                const response = await axios.get('https://fullstack-food-delivery-server-git-demo-hashelefes-projects.vercel.app/api/orders/', {
                     headers: {
                         "Content-Type": "application/json",
                         "Authorization": `Bearer ${auth?.accessToken}`

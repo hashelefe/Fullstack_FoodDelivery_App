@@ -19,7 +19,7 @@ const Cart = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const order = { name, user, address, city, info, products, value };
-        fetch('https://fullstack-food-delivery-server.vercel.app/api/orders', {
+        fetch('https://fullstack-food-delivery-server-git-demo-hashelefes-projects.vercel.app/api/orders', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

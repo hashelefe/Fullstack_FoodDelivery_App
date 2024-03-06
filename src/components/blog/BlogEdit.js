@@ -13,7 +13,7 @@ const BlogEdit = () => {
     
     useEffect(() => {
         // Fetch the blog data when the component mounts
-        axios.get(`https://fullstack-food-delivery-server.vercel.app/api/blogs/${id}`, {
+        axios.get(`https://fullstack-food-delivery-server-git-demo-hashelefes-projects.vercel.app/api/blogs/${id}`, {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${auth?.accessToken}`
@@ -37,7 +37,7 @@ const BlogEdit = () => {
         e.preventDefault();
         const updatedBlog = { title, desc, content };
         
-        fetch(`https://fullstack-food-delivery-server.vercel.app/api/blogs/${id}`, {
+        fetch(`https://fullstack-food-delivery-server-git-demo-hashelefes-projects.vercel.app/api/blogs/${id}`, {
             method: 'PUT',
             headers: { 
                 "Content-Type": "application/json",
