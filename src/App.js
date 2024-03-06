@@ -12,6 +12,7 @@ import RestaurantDetails from './components/restaurants/RestaurantDetails';
 import BlogEdit from './components/blog/BlogEdit';
 import { CartProvider } from './context/CartProvider';
 import Orders from './components/Orders';
+import Formularz from './components/Formularz'
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
 
           <Route exact path="/blogs">
             <Blogs/>
+          </Route>
+
+          <Route exact path="/formularz">
+            <Formularz/>
           </Route>
 
           <Route exact path="/blogs/create">

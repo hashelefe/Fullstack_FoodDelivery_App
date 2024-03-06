@@ -8,10 +8,10 @@ const BlogDetails = () => {
     const {id} = useParams();
     const history = useHistory();
     const {auth} = useContext(AuthContext);
-    const {fetched: blog, isPending} = useFetch('https://fooddelivery-api.onrender.com/api/blogs/'+id)
+    const {fetched: blog, isPending} = useFetch('https://fullstack-food-delivery-server.vercel.app/api/blogs/'+id)
     
     const handleDelete = () => {
-      fetch(`https://fooddelivery-api.onrender.com/api/blogs/${id}`, {
+      fetch(`https://fullstack-food-delivery-server.vercel.app/api/blogs/${id}`, {
           method: 'DELETE',
           headers: {
               "Content-Type": "application/json",

@@ -9,7 +9,7 @@ import BlogList from './blog/BlogList';
 const Home = () => {
 
 
-    const {fetched: blogs, isPending} = useFetch('https://fooddelivery-api.onrender.com/api/blogs/')
+    const {fetched: blogs, isPending} = useFetch('https://fullstack-food-delivery-server.vercel.app/api/blogs/')
     return (
         <div className="container">
             <div className="firstSection">

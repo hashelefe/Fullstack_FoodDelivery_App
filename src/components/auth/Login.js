@@ -2,7 +2,7 @@ import { useRef, useState, useEffect, useContext } from "react";
 import axios from '../../api/axios';
 import AuthContext from "../../auth/AuthProvider";
 
-const LOGIN_URL = 'https://fooddelivery-api.onrender.com/api/users/login'
+const LOGIN_URL = 'https://fullstack-food-delivery-server.vercel.app/api/users/login'
 
 const Login = ({toggleModal, setIsRegistered}) => {
     
